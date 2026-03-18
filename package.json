@@ -85,5 +85,9 @@
     "dependencies": {
         "request": "^2.88.2",
         "url-parse": "^1.5.9"
+    },
+    "volta": {
+        "node": "24.14.0",
+        "npm": "11.11.1"
     }
 }
