@@ -42,8 +42,9 @@ Defined in `package.json` under `contributes.configuration`: `url`, `user`, `pas
 - TypeScript (strict mode, target ES6, CommonJS modules)
 - Linting: TSLint (`tslint.json`)
 - Test framework: Mocha with TDD interface
-- HTTP: `request` library, URL parsing via `url-parse`
+- HTTP: Node.js built-in `http`/`https` modules
 - Minimum VS Code engine: ^1.25.0
+- Node.js/npm versions pinned via Volta (see `package.json` `volta` field)
 
 ## Repository Notes
 
