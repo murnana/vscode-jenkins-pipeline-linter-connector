@@ -70,19 +70,24 @@
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+        "test": "npm run compile && node ./out/test/runTest"
     },
     "devDependencies": {
-        "@types/mocha": "^2.2.42",
-        "@types/node": "^7.0.43",
-        "node.extend": ">=1.1.7",
+        "@types/mocha": "^10.0.6",
+        "@types/node": "^20.0.0",
+        "@types/vscode": "^1.25.0",
+        "@vscode/test-electron": "^2.3.9",
+        "mocha": "^11.0.0",
         "tslint": "^5.8.0",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.36"
+        "typescript": "^5.3.3"
     },
-    "dependencies": {
-        "request": "^2.88.2",
-        "url-parse": "^1.5.9"
+    "dependencies": {},
+    "overrides": {
+        "serialize-javascript": "^7.0.4",
+        "diff": "^8.0.3"
+    },
+    "volta": {
+        "node": "24.14.0",
+        "npm": "11.11.1"
     }
 }
