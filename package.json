@@ -82,7 +82,7 @@
         "vscode": "^1.1.36"
     },
     "dependencies": {
-        "request": "^2.88.0",
-        "url-parse": "^1.4.3"
+        "request": "^2.88.2",
+        "url-parse": "^1.5.9"
     }
 }
